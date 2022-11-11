@@ -15,69 +15,6 @@ public class Carte {
 	private ArrayList<Obstacle> obstacle = new ArrayList<Obstacle>();
 	private Personnage p;
 	
-	//Constructeur
-	/*public Carte ()
-	{
-		grille = new Object[NB_COL][NB_ROW];
-		for(int i = 0 ; i < NB_ROW ; ++i)
-		{
-			for(int j = 0 ; j < NB_COL ; ++j)
-				grille[i][j] = null;
-				grille[2][0] = p;
-
-		}
-		
-		int l = random.nextInt(NB_ROW);
-		int c = random.nextInt(NB_COL);
-		grille[l][c] = new Monster(new Position(l, c));
-		monster.add((Monster) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-		grille[l][c] = new Monster(new Position(l, c));
-		monster.add((Monster) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-		grille[l][c] = new Monster(new Position(l, c));
-		monster.add((Monster) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-		grille[l][c] = new Obstacle(new Position(l, c));
-		obstacle.add((Obstacle) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-		grille[l][c] = new Obstacle(new Position(l, c));
-		obstacle.add((Obstacle) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-		grille[l][c] = new Obstacle(new Position(l, c));
-		obstacle.add((Obstacle) grille[l][c]);
-		
-		while (grille[l][c] != null) {
-			c = random.nextInt(NB_COL);
-			l = random.nextInt(NB_ROW);
-		}
-		
-	}*/
 	
 	public void jouer()
 	{
@@ -168,7 +105,6 @@ public class Carte {
 	}
 
 
-	//Position le personnage sur un position par lgn colonne
 	public void positionnerPersonnage(int l, int c)
 	{ 
 		if(l >= 0 && l < NB_ROW || c >= 0 && c < NB_COL)
